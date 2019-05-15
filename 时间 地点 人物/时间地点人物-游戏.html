@@ -1,0 +1,41 @@
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p id ='zxd'>时间地点人物</p>
+  <script>
+    var person = ['老师','小陈','门卫']
+    var ground = ['教室','校门','教务处']
+    var shijian = ['看门','学习','批试卷']
+    var times = ['上午','下午','中午']
+
+    var p,g,s,t
+    p=Math.floor(Math.random()*person.length)
+    g=Math.floor(Math.random()*ground.length)
+    s=Math.floor(Math.random()*shijian.length)
+    t=Math.floor(Math.random()*times.length)
+    document.write(person[p]+times[t]+'在'+ground[g]+shijian[s])
+
+    document.write('<br>')
+    document.write('<br>')
+    var car = {
+      color:'yellow',
+      energy:60,
+      speed:886,
+    }
+    function stop() {
+      this.speed=0
+    }
+
+    document.write(car.speed)
+
+    theElement = document.getElementById('headText')
+    theElement.innerHTML = '猜猜我在哪啊'
+  </script>
+
+</body>
+</html>

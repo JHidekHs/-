@@ -1,0 +1,6 @@
+    function foo(arr){
+      console.log(arr)
+    }
+
+    foo(person)
+    foo(ground)
